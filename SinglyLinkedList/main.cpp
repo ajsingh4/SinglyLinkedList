@@ -8,8 +8,19 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include "LList.h"
+
+using namespace std;
+
+int main() {
+    LList Aj;
+    Aj.Insert(5);
+    Aj.Insert(8);
+    Aj.Insert(10);
+    Aj.PrintList();
+    Aj.Remove(8);
+    Aj.PrintList();
+    Aj.Remove(5);
+    Aj.PrintList();
+    
 }
